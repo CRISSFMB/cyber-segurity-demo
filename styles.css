@@ -89,4 +89,74 @@ html *:before {
   .hero_info__description::before {
     top: -6rem;
   }
+}
+
+.our-features {
+  color: #0096e3;
+}
+.our-features__mainTitle {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards__features {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .cards__features {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 150rem;
+    flex-wrap: nowrap;
+  }
+}
+
+.card__feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #ffffff;
+  padding: 4rem;
+}
+@media (min-width: 1024px) {
+  .card__feature {
+    height: 60rem;
+    width: 39rem;
+  }
+}
+.card__feature__img {
+  border-radius: 3rem;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .card__feature__img {
+    height: 25rem;
+  }
+}
+.card__feature__title {
+  font-size: 3rem;
+}
+.card__feature__info {
+  font-size: 2rem;
+}
+.card__feature__cta {
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #0096e3;
 }/*# sourceMappingURL=styles.css.map */

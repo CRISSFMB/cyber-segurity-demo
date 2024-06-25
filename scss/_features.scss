@@ -1,0 +1,70 @@
+// contenedor section
+.our-features {
+  color: $bluePrimary;
+  &__mainTitle {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+//contenedor cards
+.cards__features {
+  color: black;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+
+  @include desktopM {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 150rem;
+    flex-wrap: nowrap;
+  }
+}
+// card
+.card__feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #ffffff;
+  padding: 4rem;
+
+  @include desktopM {
+    height: 60rem;
+    width: 39rem;
+  }
+
+  &__img {
+    border-radius: 3rem;
+    width: 100%;
+
+    @include desktopM {
+      height: 25rem;
+    }
+  }
+  &__title {
+    font-size: 3rem;
+  }
+  &__info {
+    font-size: 2rem;
+  }
+  &__cta {
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    color: $bluePrimary;
+  }
+}

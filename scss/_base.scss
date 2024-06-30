@@ -6,11 +6,19 @@ html {
     @include box-sizing(inherit);
     margin: 0;
     padding: 0;
+    //border: 1px solid red;
   }
   font-size: 10px;
 }
 
 .container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  background-color: rgb(255, 248, 248);
+}
+
+.container-v2 {
   margin: 0 auto;
   width: 90%;
   height: 100%;
